@@ -4,8 +4,9 @@ For mock APIs have persisted the data to localStorage
 At any time to revert to initial Store call `window.resetStore()`
 
 As of now 2 users exists
-```1. user,password
- 2. admin,password
+```
+ 1. username: user, password: password
+ 2. username: admin,password: password
 ```
 can use these to login
 registering new user would add users to existing List
