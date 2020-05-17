@@ -1,6 +1,7 @@
 # ride-share
 
-For mock APIs have persisted the data to localStorage
+For mock APIs have persisted the data to localStorage instead of creating a Node server to handle Calls
+All data calls are promise based
 At any time to revert to initial Store call `window.resetStore()`
 
 As of now 2 users exists
