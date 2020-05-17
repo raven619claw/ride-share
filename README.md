@@ -28,6 +28,8 @@ Assuming Validations are handled
 
 Any active ride for one user would be blocked for another user
 
+Availability of cars is based on vacant seats (so for multiple seats same car can be in active and available state)
+
 Cannot have more than 1 active ride for a user(need to cancel to make that driver seat available again)
 
 Map can be opened using map icon
