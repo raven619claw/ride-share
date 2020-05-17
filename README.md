@@ -22,7 +22,7 @@ registering new user would add users to existing List
 
 for new users username is `fullname`
 
-to see the current data key is store in `window.store`
+to see the current data key is `window.store`
 
 Assuming Validations are handled 
 
