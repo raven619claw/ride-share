@@ -11,7 +11,9 @@ As of now 2 users exists
 can use these to login
 registering new user would add users to existing List
 
-Any rides for one user would be blocked if logging out and logging in from another user
+Assuming Validations are handled 
+
+Any active ride for one user would be blocked for another user
 
 Cannot have more than 1 active ride for a user(need to cancel to make that driver seat available again)
 
