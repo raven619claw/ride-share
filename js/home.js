@@ -1,4 +1,5 @@
 import { addRemoveClassOnElement } from "./utils.js"
+import { checkLogin } from "./routeCheck.js"
 import {
   logout,
   start,
@@ -108,9 +109,7 @@ const bindEvents = () => {
     renderActiveRide()
   })
 }
-if (window.location.pathname == "/home.html") {
-  init()
-}
+
 //render filtered list of drivers based on start and destination
 const trimDrivers = () => {
   const drivers = getAllAvailableDrivers()
@@ -134,4 +133,8 @@ const trimDrivers = () => {
     return flag
   })
   renderAvailableDrivers(selectedDrivers)
+}
+
+if (window.location.pathname == "/home.html") {
+  checkLogin() && init()
 }

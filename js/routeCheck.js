@@ -1,6 +1,6 @@
 import { getCookie } from "./utils.js"
 
-const checkLogin = () => JSON.parse(getCookie("login"))
+export const checkLogin = () => JSON.parse(getCookie("login"))
 
 //checks for login status to redirect user to correct page
 if (window.location.pathname == "/") {
