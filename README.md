@@ -5,6 +5,7 @@ All data calls are promise based
 At any time to revert to initial Store call `window.resetStore()`
 
 To run it locally create a simple http server 
+
 Have deployed it on: https://naughty-kirch-36042c.netlify.app/home.html
 
 As of now 2 users exists
