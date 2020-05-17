@@ -36,3 +36,4 @@ Closed when clicking outside
 
 Using free google maps so it shows overlay for dev
 
+Both SCSS and CSS files are committed so as it runs on netlify
