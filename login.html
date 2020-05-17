@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./scss/index.css" />
+    <script src="./js/index.js" type="module"></script>
+  </head>
+  <body class="hidden">
+    <header>
+      <img class="logo" src="./img/logo.png" />
+      <div>LOGIN TO APP</div>
+    </header>
+    <div class="login-container">
+      <div class="login-details">
+        <div class="input">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            placeholder="10 digit mobile number or email id"
+            id="username"
+          />
+        </div>
+        <div class="input">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="*********" />
+          <div class="forgot-pass link">FORGOT PASSWORD?</div>
+        </div>
+        <div class="flex-center">
+          <div class="btn js-login">LOGIN</div>
+        </div>
+      </div>
+      <div class="flex-center mt-10">
+        Don't have an account?
+        <a href="/register.html" class="reset-a link ml-10">Register Now</a>
+      </div>
+    </div>
+  </body>
+</html>

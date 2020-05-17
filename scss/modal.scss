@@ -1,0 +1,28 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .modal-content {
+    height: 200px;
+    width: 400px;
+    background: #fff;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    flex-direction: column;
+    z-index: 1;
+  }
+  &.map-modal {
+    .modal-content {
+      height: 90%;
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+import "./routeCheck.js"
+import "./store.js"
+import "./login.js"
+import "./register.js"
+import "./home.js"

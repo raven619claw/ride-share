@@ -1,0 +1,67 @@
+.map-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.top-container {
+  position: relative;
+  background: #e5e3e6;
+  height: 300px;
+}
+
+.top-container .input-container {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 65px;
+}
+
+.top-container .input-container .input {
+  margin-bottom: 35px;
+  padding: 20px 10px;
+  background: #fff;
+  width: 40%;
+}
+
+@media screen and (max-width: 767px) {
+  .top-container {
+    height: auto;
+  }
+  .top-container .input-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 50px;
+  }
+  .top-container .input-container .input {
+    width: 90%;
+  }
+}
+
+.results-container,
+.active-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+  margin: 20px auto;
+  max-width: 1024px;
+}
+
+.active-container {
+  border-bottom: solid 1px #ccc;
+  padding-bottom: 20px;
+}
+
+.active-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=home.css.map */

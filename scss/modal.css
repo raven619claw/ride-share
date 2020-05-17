@@ -1,0 +1,33 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.modal .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.modal .modal-content {
+  height: 200px;
+  width: 400px;
+  background: #fff;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1;
+}
+
+.modal.map-modal .modal-content {
+  height: 90%;
+  width: 90%;
+}
+/*# sourceMappingURL=modal.css.map */

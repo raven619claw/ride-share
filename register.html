@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./scss/index.css" />
+    <script src="./js/index.js" type="module"></script>
+  </head>
+  <body class="hidden">
+    <header>
+      <img class="logo" src="./img/logo.png" />
+      <div>REGISTER WITH APP</div>
+    </header>
+    <div class="login-container">
+      <div class="login-details">
+        <div class="input">
+          <label for="username">Fullname</label>
+          <input
+            type="text"
+            placeholder="enter your firstname and lastname"
+            id="username"
+          />
+        </div>
+        <div class="input">
+          <label for="email">Email ID</label>
+          <input type="text" placeholder="enter your email id" id="email" />
+        </div>
+        <div class="input">
+          <label for="phone">Mobile Number</label>
+          <input
+            type="text"
+            placeholder="enter your 10 digit mobile number"
+            id="phone"
+          />
+        </div>
+        <div class="input">
+          <label for="password">Password<span>(min 6 characters)</span></label>
+          <input
+            type="password"
+            placeholder="set your password"
+            id="password"
+          />
+        </div>
+        <div class="input">
+          <label for="cpassword">Re-enter password</label>
+          <input
+            type="password"
+            placeholder="re-enter your password"
+            id="cpassword"
+          />
+        </div>
+        <div class="input">
+          <label for="car">Car Model</label>
+          <input type="text" placeholder="name of the car you have" id="car" />
+        </div>
+
+        <div class="flex-center">
+          <div class="btn js-register">Register</div>
+        </div>
+      </div>
+      <div class="flex-center mt-10">
+        Already have an account?
+        <a href="/login.html" class="reset-a link ml-10">Login Now</a>
+      </div>
+    </div>
+  </body>
+</html>

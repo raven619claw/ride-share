@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./scss/index.css" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF31D7qYxrEYq9mYNQTNoXmKjAv5UZLso"></script>
+    <script src="./js/index.js" type="module"></script>
+  </head>
+  <body class="hidden">
+    <header>
+      <img class="logo" src="./img/logo.png" />
+      <div>PICK A RIDE</div>
+      <img class="logo logout js-logout" src="./img/user-profile.png" />
+    </header>
+    <div class="top-container">
+      <div class="input-container flex-center">
+        <div class="input">
+          <label for="start">Start From</label>
+          <input type="text" placeholder="enter start location" id="start" />
+        </div>
+        <div class="input">
+          <label for="des">Destination</label>
+          <input type="text" placeholder="enter destination" id="des" />
+        </div>
+      </div>
+      <img class="logo map-icon js-map" src="./img/map-icon.png" />
+    </div>
+    <div class="active-container">
+      <div class="w-100 active-title">
+        Active Rides<span class="end-active hidden ml-10 link"
+          >END ACTIVE RIDE</span
+        >
+      </div>
+
+      <div class="active-ride w-100">No Active Rides</div>
+    </div>
+    <div class="results-container"></div>
+    <div class="flex-center mt-10">
+      <div class="btn js-confirm mt-10 mb-10 disabled">CONFIRM RIDE</div>
+    </div>
+    <div class="modal confirm-modal hidden flex-center">
+      <div class="overlay"></div>
+      <div class="modal-content flex-center">
+        <div class="confirm-txt">Ride confirmed</div>
+        <div class="booked-ride"></div>
+        <div class="btn modal-close mt-10 mb-10">CLOSE</div>
+      </div>
+    </div>
+    <div class="modal map-modal hidden flex-center">
+      <div class="overlay map-overlay"></div>
+      <div class="modal-content flex-center" id="map-container"></div>
+    </div>
+  </body>
+</html>

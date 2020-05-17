@@ -1,0 +1,52 @@
+.map-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+.top-container {
+  position: relative;
+  background: #e5e3e6;
+  height: 300px;
+
+  .input-container {
+    justify-content: space-evenly;
+    padding-top: 65px;
+    .input {
+      margin-bottom: 35px;
+      padding: 20px 10px;
+      background: #fff;
+      width: 40%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    height: auto;
+    .input-container {
+      flex-wrap: wrap;
+      padding-bottom: 50px;
+      .input {
+        width: 90%;
+      }
+    }
+  }
+}
+.results-container,
+.active-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 20px auto;
+  max-width: 1024px;
+}
+.active-container {
+  border-bottom: solid 1px #ccc;
+  padding-bottom: 20px;
+}
+.active-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}

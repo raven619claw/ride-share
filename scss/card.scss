@@ -1,0 +1,88 @@
+.card {
+  display: inline-flex;
+  border: solid 1px #ccc;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  position: relative;
+
+  &:nth-child(2n) {
+    margin-left: auto;
+  }
+  width: 40%;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    &:nth-child(2n) {
+      margin-left: 10px;
+    }
+  }
+  .card-img-call,
+  .card-img-right {
+    display: none;
+  }
+  .card-img-call {
+    position: absolute;
+    right: 0;
+  }
+  cursor: pointer;
+  &.active {
+    background: #8aceff;
+    color: #fff;
+    .card-distance {
+      color: #fff;
+    }
+    .card-img,
+    .card-rating,
+    .rating {
+      display: none;
+    }
+    .card-img-call,
+    .card-img-right {
+      display: block;
+    }
+  }
+  .card-main {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: auto;
+  }
+  .card-img,
+  .card-img-call,
+  .card-img-right {
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+  }
+  .card-content {
+    flex: 1;
+  }
+  .card-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  .card-distance {
+    font-size: 14px;
+    color: #ccc;
+    font-style: italic;
+  }
+  .card-rating {
+    margin-left: auto;
+  }
+  .rating {
+    height: 20px;
+    align-self: center;
+    margin-left: 10px;
+  }
+  .card-route-wrap,
+  .card-car-wrap {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  .card-route,
+  .card-car,
+  .card-seats {
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
